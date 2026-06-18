@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>站内搜索-经典国产电视剧-经典剧集片库-高清剧集在线播放</title>
+  <meta name="description" content="搜索经典国产电视剧、高清剧集、地区、年份、类型与标签，快速进入对应详情页在线播放。">
+  <meta name="keywords" content="经典国产电视剧,经典剧集片库,国产电视剧,高清剧集,口碑剧集,电视剧片单,精选剧集,站内搜索,剧集搜索">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-base="">
+<header class="bg-gradient-ocean text-white sticky top-0 z-50 shadow-ocean-lg">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a href="index.html" class="flex items-center space-x-2 group" aria-label="经典国产电视剧首页">
+        <span class="site-logo-mark" aria-hidden="true">剧</span>
+        <span class="text-xl lg:text-2xl font-bold tracking-wide">经典国产电视剧</span>
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8" aria-label="主导航">
+        <a href="index.html" class="font-medium hover:text-seafoam transition-colors">首页</a>
+        <a href="categories.html" class="font-medium hover:text-seafoam transition-colors">分类</a>
+        <a href="all.html" class="font-medium hover:text-seafoam transition-colors">全部片库</a>
+        <a href="ranking.html" class="font-medium hover:text-seafoam transition-colors">排行榜</a>
+        <a href="search.html" class="font-medium text-seafoam">搜索</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button type="button" class="p-2 hover:bg-ocean-deep rounded-lg transition-colors" aria-label="搜索" data-toggle-search>
+          <span class="site-icon" aria-hidden="true">⌕</span>
+        </button>
+        <button type="button" class="lg:hidden p-2 hover:bg-ocean-deep rounded-lg transition-colors" aria-label="菜单" data-toggle-menu>
+          <span class="site-icon" aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+    <div class="pb-4 hidden animate-fade-in" data-search-panel>
+      <form class="relative" data-site-search-form>
+        <input type="text" name="q" placeholder="搜索剧集、年份、地区、标签..." class="w-full px-4 py-3 pr-12 rounded-lg text-text-dark focus:outline-none focus:ring-2 focus:ring-seafoam">
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 p-2 hover:bg-ocean-light rounded-lg transition-colors" aria-label="提交搜索">
+          <span class="text-ocean-blue">⌕</span>
+        </button>
+      </form>
+    </div>
+    <nav class="lg:hidden py-4 space-y-2 animate-fade-in border-t border-ocean-light hidden" aria-label="移动导航" data-mobile-menu>
+      <a href="index.html" class="block w-full text-left px-4 py-3 hover:bg-ocean-deep rounded-lg transition-colors">首页</a>
+      <a href="categories.html" class="block w-full text-left px-4 py-3 hover:bg-ocean-deep rounded-lg transition-colors">分类</a>
+      <a href="all.html" class="block w-full text-left px-4 py-3 hover:bg-ocean-deep rounded-lg transition-colors">全部片库</a>
+      <a href="ranking.html" class="block w-full text-left px-4 py-3 hover:bg-ocean-deep rounded-lg transition-colors">排行榜</a>
+      <a href="search.html" class="block w-full text-left px-4 py-3 hover:bg-ocean-deep rounded-lg transition-colors">搜索</a>
+    </nav>
+  </div>
+</header>
+<main class="container mx-auto px-4 py-8 animate-fade-in">
+  <nav class="text-sm text-text-gray mb-6">
+    <a href="index.html" class="hover:text-ocean-blue">首页</a>
+    <span class="mx-2">/</span>
+    <span>站内搜索</span>
+  </nav>
+  <section class="mb-8">
+    <h1 class="text-3xl lg:text-4xl font-bold text-ocean-deep mb-4">站内搜索</h1>
+    <p class="text-text-gray leading-relaxed max-w-3xl">输入片名、地区、年份、类型或标签，搜索 2000 部静态片库内容。</p>
+  </section>
+  <section class="bg-white rounded-lg p-4 lg:p-6 shadow-ocean mb-8">
+    <form class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3" data-search-page-form>
+      <input type="search" name="q" class="filter-control" placeholder="例如：家庭、古装、悬疑、2024、中国大陆">
+      <button type="submit" class="px-6 py-3 bg-coral-accent hover:bg-coral-light rounded-lg font-semibold text-white transition-colors">搜索</button>
+    </form>
+    <p class="text-text-gray mt-4" data-search-summary>请输入关键词开始搜索。</p>
+  </section>
+  <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-6" id="search-results" aria-live="polite"></section>
+</main>
+<footer class="bg-ocean-deep text-white mt-16">
+  <div class="container mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <span class="site-logo-mark" aria-hidden="true">剧</span>
+          <span class="text-xl font-bold tracking-wide">经典国产电视剧</span>
+        </div>
+        <p class="text-ocean-light leading-relaxed">经典国产电视剧页面整理多年代国产剧佳作，覆盖家庭、年代、都市、古装等题材。</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4 text-seafoam">快速入口</h3>
+        <div class="grid grid-cols-2 gap-2 text-ocean-light">
+          <a href="index.html" class="hover:text-seafoam transition-colors">首页</a>
+          <a href="categories.html" class="hover:text-seafoam transition-colors">分类总览</a>
+          <a href="all.html" class="hover:text-seafoam transition-colors">全部片库</a>
+          <a href="ranking.html" class="hover:text-seafoam transition-colors">排行榜</a>
+          <a href="search.html" class="hover:text-seafoam transition-colors">站内搜索</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4 text-seafoam">热门分类</h3>
+        <div class="grid grid-cols-2 gap-2 text-ocean-light">
+          <a href="category/classic-drama.html" class="hover:text-seafoam transition-colors">经典剧集</a>
+          <a href="category/family-times.html" class="hover:text-seafoam transition-colors">家庭年代</a>
+          <a href="category/urban-life.html" class="hover:text-seafoam transition-colors">都市生活</a>
+          <a href="category/costume-legend.html" class="hover:text-seafoam transition-colors">古装传奇</a>
+          <a href="category/suspense-crime.html" class="hover:text-seafoam transition-colors">悬疑犯罪</a>
+          <a href="category/comedy-healing.html" class="hover:text-seafoam transition-colors">喜剧治愈</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-ocean-blue pt-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <p class="text-ocean-light text-sm text-center md:text-left">© 2026 经典国产电视剧. 经典剧集片库静态页面。</p>
+      <button type="button" class="flex items-center space-x-2 px-4 py-2 bg-ocean-blue hover:bg-ocean-light rounded-lg transition-colors group" data-back-top>
+        <span class="text-sm">回到顶部</span>
+        <span class="group-hover:-translate-y-1 transition-transform">↑</span>
+      </button>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/search-data.js"></script>
+<script src="assets/js/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
